@@ -1,0 +1,105 @@
+# Created by .ignore support plugin (hsz.mobi)
+### C++ template
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+.DS_Store
+.idea/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+CMakeFiles/3.10.1/CMakeCCompiler.cmake
+CMakeFiles/3.10.1/CMakeCXXCompiler.cmake
+CMakeFiles/3.10.1/CMakeDetermineCompilerABI_C.bin
+CMakeFiles/3.10.1/CMakeDetermineCompilerABI_CXX.bin
+CMakeFiles/3.10.1/CMakeSystem.cmake
+CMakeFiles/3.10.1/CompilerIdC/CMakeCCompilerId.c
+CMakeFiles/3.10.1/CompilerIdC/tmp/
+CMakeFiles/3.10.1/CompilerIdCXX/CMakeCXXCompilerId.cpp
+CMakeFiles/3.10.1/CompilerIdCXX/tmp/
+CMakeFiles/CMakeDirectoryInformation.cmake
+CMakeFiles/CMakeOutput.log
+CMakeFiles/CMakeTmp/
+CMakeFiles/Makefile.cmake
+CMakeFiles/Makefile2
+CMakeFiles/MyOpenCVProj.dir/CXX.includecache
+CMakeFiles/MyOpenCVProj.dir/DependInfo.cmake
+CMakeFiles/MyOpenCVProj.dir/build.make
+CMakeFiles/MyOpenCVProj.dir/cmake_clean.cmake
+CMakeFiles/MyOpenCVProj.dir/depend.internal
+CMakeFiles/MyOpenCVProj.dir/depend.make
+CMakeFiles/MyOpenCVProj.dir/flags.make
+CMakeFiles/MyOpenCVProj.dir/link.txt
+CMakeFiles/MyOpenCVProj.dir/progress.make
+CMakeFiles/TargetDirectories.txt
+CMakeFiles/cmake.check_cache
+CMakeFiles/feature_tests.bin
+CMakeFiles/feature_tests.c
+CMakeFiles/feature_tests.cxx
+CMakeFiles/progress.marks
+CMakeLists.txt
+cmake-build-debug/CMakeFiles/3.9.4/CMakeCCompiler.cmake
+cmake-build-debug/CMakeFiles/3.9.4/CMakeCXXCompiler.cmake
+cmake-build-debug/CMakeFiles/3.9.4/CMakeDetermineCompilerABI_C.bin
+cmake-build-debug/CMakeFiles/3.9.4/CMakeDetermineCompilerABI_CXX.bin
+cmake-build-debug/CMakeFiles/3.9.4/CMakeSystem.cmake
+cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/CMakeCCompilerId.c
+cmake-build-debug/CMakeFiles/3.9.4/CompilerIdC/tmp/
+cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/CMakeCXXCompilerId.cpp
+cmake-build-debug/CMakeFiles/3.9.4/CompilerIdCXX/tmp/
+cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake
+cmake-build-debug/CMakeFiles/CMakeOutput.log
+cmake-build-debug/CMakeFiles/CMakeTmp/
+cmake-build-debug/CMakeFiles/Makefile.cmake
+cmake-build-debug/CMakeFiles/Makefile2
+cmake-build-debug/CMakeFiles/MyOpenCVProj.dir/CXX.includecache
+cmake-build-debug/CMakeFiles/MyOpenCVProj.dir/DependInfo.cmake
+cmake-build-debug/CMakeFiles/MyOpenCVProj.dir/build.make
+cmake-build-debug/CMakeFiles/MyOpenCVProj.dir/cmake_clean.cmake
+cmake-build-debug/CMakeFiles/MyOpenCVProj.dir/depend.internal
+cmake-build-debug/CMakeFiles/MyOpenCVProj.dir/depend.make
+cmake-build-debug/CMakeFiles/MyOpenCVProj.dir/flags.make
+cmake-build-debug/CMakeFiles/MyOpenCVProj.dir/link.txt
+cmake-build-debug/CMakeFiles/MyOpenCVProj.dir/progress.make
+cmake-build-debug/CMakeFiles/TargetDirectories.txt
+cmake-build-debug/CMakeFiles/clion-environment.txt
+cmake-build-debug/CMakeFiles/clion-log.txt
+cmake-build-debug/CMakeFiles/cmake.check_cache
+cmake-build-debug/CMakeFiles/feature_tests.bin
+cmake-build-debug/CMakeFiles/feature_tests.c
+cmake-build-debug/CMakeFiles/feature_tests.cxx
+cmake-build-debug/CMakeFiles/progress.marks
+cmake-build-debug/MyOpenCVProj
+cmake-build-debug/MyOpenCVProj.cbp
+cmake-build-debug/show.png
+main.cpp
