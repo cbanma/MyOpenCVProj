@@ -4,20 +4,15 @@
 
 #ifndef MYOPENCVPROJS_CSHOWIMAGEVIEW_H_CGQ
 #define MYOPENCVPROJS_CSHOWIMAGEVIEW_H_CGQ
-#include <QDialog>
-#include <QObject>
-#include <QPushButton>
+#include "../BaseView/CBaseView.h"
 
-class CHelloWorldView :public QObject{
+
+class CHelloWorldView :public CBaseView{
     Q_OBJECT
 public:
-    typedef void (*BTN_CB)();
 
-    QDialog *mDialog;
     CHelloWorldView();
     void initView();
-    void createDialog();
-    void createButton(QString name,int x = 0,int y = 0);
 private slots:
     void onBtnClick();
 

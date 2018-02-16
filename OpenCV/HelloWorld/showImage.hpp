@@ -29,7 +29,7 @@ Mat initImage(bool bIsShow){
 
 
 Mat roiImage(Mat & srcImage,bool bIsShow) {
-    Rect roiRect(240, 300, 620, 480);
+    Rect roiRect(350, 240, 760, 820);
     Mat roiMat(srcImage, roiRect);
     if (bIsShow) {
         showImage("roiImage", roiMat);

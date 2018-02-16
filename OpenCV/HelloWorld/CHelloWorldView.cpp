@@ -8,39 +8,25 @@
 #include "utils.hpp"
 
 
-CHelloWorldView::CHelloWorldView() {
+CHelloWorldView::CHelloWorldView() : CBaseView() {
     initView();
-    mDialog->show();
+    if(mDialog != NULL) {
+        mDialog->show();
+    }
 }
 
 
 
 void CHelloWorldView::initView() {
-    createDialog();
     createButton("原始图片",0,0);
     createButton("showRoiImage",150,0);
     createButton("showRangeMage",300,0);
 
     createButton("showSobelMage",0,50);
     createButton("showSobelMageFull",150,50);
+    createButton("退出程序",400,460);
 }
 
-
-
-void CHelloWorldView::createDialog() {
-    mDialog =new QDialog;
-    mDialog->setFixedSize(500,500);
-    //mDialog->setModal(true);≈
-}
-
-
-void CHelloWorldView::createButton(QString name, int x, int y) {
-    QPushButton * showImageBtn;
-    showImageBtn = new QPushButton(name,mDialog);
-    showImageBtn->setObjectName(name);
-    showImageBtn->move(x,y);
-    connect(showImageBtn, SIGNAL(clicked()), this, SLOT(onBtnClick()));
-}
 
 void CHelloWorldView::onBtnClick()
 {
@@ -63,6 +49,8 @@ void CHelloWorldView::onBtnClick()
             break;
         case "showSobelMageFull"_hash:
             showSobelMageFull();
+        case "退出程序"_hash:
+            exit(0);
             break;
         default:
             cout << "Default..." << endl;
