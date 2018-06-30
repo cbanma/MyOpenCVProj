@@ -7,6 +7,7 @@
 #include <QDialog>
 #include <QObject>
 #include <QPushButton>
+#include <QPainter>
 
 
 class CBaseView :public QObject{
@@ -21,7 +22,6 @@ public:
 
     virtual void initView() = 0;
     virtual void onBtnClick() = 0;
-
     QDialog *mDialog;
 };
 

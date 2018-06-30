@@ -2,7 +2,7 @@
 #define MAINWINDOW_H_CGQ
 
 #include <QMainWindow>
-#include "OpenCV/HelloWorld/CHelloWorldView.h"
+#include "OpenCV/HelloWorld/views/CHelloWorldView.h"
 
 namespace Ui {
 class MainWindow;

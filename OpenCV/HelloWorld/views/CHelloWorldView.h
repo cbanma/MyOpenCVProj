@@ -4,13 +4,12 @@
 
 #ifndef MYOPENCVPROJS_CSHOWIMAGEVIEW_H_CGQ
 #define MYOPENCVPROJS_CSHOWIMAGEVIEW_H_CGQ
-#include "../BaseView/CBaseView.h"
+#include "OpenCV/BaseView/CBaseView.h"
 
 
 class CHelloWorldView :public CBaseView{
     Q_OBJECT
 public:
-
     CHelloWorldView();
     void initView();
 private slots:

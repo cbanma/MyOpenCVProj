@@ -4,7 +4,7 @@
 
 #include <sys/socket.h>
 #include "CHelloWorldView.h"
-#include "./showImage.hpp"
+#include "OpenCV/HelloWorld/opencv/showImage.hpp"
 #include "utils.hpp"
 
 
@@ -13,6 +13,7 @@ CHelloWorldView::CHelloWorldView() : CBaseView() {
     if(mDialog != NULL) {
         mDialog->show();
     }
+
 }
 
 
@@ -25,8 +26,8 @@ void CHelloWorldView::initView() {
     createButton("showSobelMage",0,50);
     createButton("showSobelMageFull",150,50);
     createButton("退出程序",400,460);
-}
 
+}
 
 void CHelloWorldView::onBtnClick()
 {
@@ -56,5 +57,3 @@ void CHelloWorldView::onBtnClick()
             cout << "Default..." << endl;
     }
 }
-
-
