@@ -9,9 +9,9 @@ set(SOURCE_FILES
         mainwindow.cpp
         ui_mainwindow.h
         mainwindow.h
-        OpenCV/HelloWorld/showImage.hpp
-        OpenCV/HelloWorld/CHelloWorldView.cpp
-        OpenCV/HelloWorld/CHelloWorldView.h utils.hpp OpenCV/BaseView/CBaseView.cpp OpenCV/BaseView/CBaseView.h)
+        OpenCV/HelloWorld/opencv/showImage.hpp
+        OpenCV/HelloWorld/views/CHelloWorldView.cpp
+        OpenCV/HelloWorld/views/CHelloWorldView.h utils.hpp OpenCV/BaseView/CBaseView.cpp OpenCV/BaseView/CBaseView.h)
 
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
