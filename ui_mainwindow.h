@@ -28,6 +28,7 @@ class Ui_MainWindow
 public:
     QWidget *centralWidget;
     QPushButton *helloWorldBtn;
+    QPushButton *cutImgButton;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -42,6 +43,9 @@ public:
         helloWorldBtn = new QPushButton(centralWidget);
         helloWorldBtn->setObjectName(QStringLiteral("helloWorldBtn"));
         helloWorldBtn->setGeometry(QRect(30, 30, 113, 32));
+        cutImgButton = new QPushButton(centralWidget);
+        cutImgButton->setObjectName(QStringLiteral("cutImgButton"));
+        cutImgButton->setGeometry(QRect(160, 30, 113, 32));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -63,6 +67,7 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
         helloWorldBtn->setText(QApplication::translate("MainWindow", "\346\230\276\347\244\272\345\233\276\347\211\207", nullptr));
+        cutImgButton->setText(QApplication::translate("MainWindow", "\345\211\252\345\210\207\345\233\276\347\211\207", nullptr));
     } // retranslateUi
 
 };

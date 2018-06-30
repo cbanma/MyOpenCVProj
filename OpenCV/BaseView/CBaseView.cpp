@@ -3,8 +3,6 @@
 //
 
 #include "CBaseView.h"
-#include <QPainter>
-#include <QRect>
 
 CBaseView::CBaseView() {
     initData();
@@ -34,5 +32,6 @@ void CBaseView::createButton(QString name, int x, int y) {
 
 void CBaseView::initData() {
     mDialog = NULL;
+    mBaseOpenCV = NULL;
 }
 

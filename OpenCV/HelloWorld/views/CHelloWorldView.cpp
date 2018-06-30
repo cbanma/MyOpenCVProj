@@ -5,7 +5,6 @@
 #include <sys/socket.h>
 #include "CHelloWorldView.h"
 #include "OpenCV/HelloWorld/opencv/showImage.hpp"
-#include "utils.hpp"
 
 
 CHelloWorldView::CHelloWorldView() : CBaseView() {
@@ -13,6 +12,7 @@ CHelloWorldView::CHelloWorldView() : CBaseView() {
     if(mDialog != NULL) {
         mDialog->show();
     }
+    mBaseOpenCV = new showImage();
 
 }
 
@@ -35,25 +35,25 @@ void CHelloWorldView::onBtnClick()
     string strName = buttonName.toStdString();
     cout << "KeyBtnClick:"<< strName <<endl;
 
-    switch(hash_(strName.data())){
+    switch(CUtils::hash_(strName.data())){
         case "原始图片"_hash:
-            showImage();
+            mBaseOpenCV->showImage();
             break;
         case "showRoiImage"_hash:
-            showRoiMage();
+            mBaseOpenCV->showRoiMage();
             break;
         case "showRangeMage"_hash:
-            showRangeMage();
+            mBaseOpenCV->showRangeMage();
             break;
         case "showSobelMage"_hash:
-            showSobelMage();
+            mBaseOpenCV->showSobelMage();
             break;
         case "showSobelMageFull"_hash:
-            showSobelMageFull();
+            mBaseOpenCV->showSobelMageFull();
         case "退出程序"_hash:
             exit(0);
-            break;
         default:
             cout << "Default..." << endl;
+            break;
     }
 }

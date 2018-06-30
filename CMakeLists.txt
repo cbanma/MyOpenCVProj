@@ -11,7 +11,13 @@ set(SOURCE_FILES
         mainwindow.h
         OpenCV/HelloWorld/opencv/showImage.hpp
         OpenCV/HelloWorld/views/CHelloWorldView.cpp
-        OpenCV/HelloWorld/views/CHelloWorldView.h utils.hpp OpenCV/BaseView/CBaseView.cpp OpenCV/BaseView/CBaseView.h)
+        OpenCV/HelloWorld/views/CHelloWorldView.h
+        CUtils.hpp
+        OpenCV/BaseView/CBaseView.cpp
+        OpenCV/BaseView/CBaseView.h
+        OpenCV/CutImage/views/CCutImgView.cpp
+        OpenCV/CutImage/views/CCutImgView.h
+        OpenCV/CutImage/opencv/cutImage.hpp OpenCV/BaseOpenCv/CBaseOpenCV.cpp OpenCV/BaseOpenCv/CBaseOpenCV.h)
 
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)

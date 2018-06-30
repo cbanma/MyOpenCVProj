@@ -27,6 +27,19 @@
      <string>显示图片</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="cutImgButton">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>30</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>剪切图片</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

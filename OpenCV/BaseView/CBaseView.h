@@ -8,7 +8,8 @@
 #include <QObject>
 #include <QPushButton>
 #include <QPainter>
-
+#include "CUtils.hpp"
+#include "../BaseOpenCv/CBaseOpenCV.h"
 
 class CBaseView :public QObject{
 public:
@@ -23,6 +24,7 @@ public:
     virtual void initView() = 0;
     virtual void onBtnClick() = 0;
     QDialog *mDialog;
+    CBaseOpenCV *mBaseOpenCV;
 };
 
 

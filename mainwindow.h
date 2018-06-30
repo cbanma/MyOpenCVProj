@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "OpenCV/HelloWorld/views/CHelloWorldView.h"
+#include "OpenCV/CutImage/views/CCutImgView.h"
 
 namespace Ui {
 class MainWindow;
@@ -19,9 +20,11 @@ public:
 private:
     Ui::MainWindow *ui;
     CHelloWorldView *mHelloWorldView;
+    CCutImgView *mCutImgView;
 
 public slots:
     void onHelloWorldBtnClick();
+    void onCutImgBtnClick();
     void initData();
 };
 

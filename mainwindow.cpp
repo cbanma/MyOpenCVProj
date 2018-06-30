@@ -7,9 +7,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     initData();
     connect(ui->helloWorldBtn, SIGNAL(clicked()), this, SLOT(onHelloWorldBtnClick()));
+    connect(ui->cutImgButton, SIGNAL(clicked()), this, SLOT(onCutImgBtnClick()));
 }
 void MainWindow::initData(){
     mHelloWorldView = NULL;
+    mCutImgView = NULL;
 }
 
 MainWindow::~MainWindow()
@@ -18,9 +20,17 @@ MainWindow::~MainWindow()
     if(mHelloWorldView != NULL){
         delete(mHelloWorldView);
     }
+    if(mCutImgView != NULL){
+        delete(mCutImgView);
+    }
 }
 
 void MainWindow::onHelloWorldBtnClick() {
     mHelloWorldView = new CHelloWorldView();
+    this->showMinimized();
+}
+
+void MainWindow::onCutImgBtnClick() {
+    mCutImgView = new CCutImgView();
     this->showMinimized();
 }
