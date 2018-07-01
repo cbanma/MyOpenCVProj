@@ -7,14 +7,15 @@
 
 #include "OpenCV/BaseView/CBaseView.h"
 
-class CCutImgView :public CBaseView{
+class CPhotoShopView :public CBaseView{
 Q_OBJECT
 public:
-    CCutImgView();
+    CPhotoShopView();
+    ~CPhotoShopView();
     void initView();
+
 private slots:
     void onBtnClick();
-
 };
 
 #endif //MYOPENCVPROJS_CCUTIMGVIEW_H

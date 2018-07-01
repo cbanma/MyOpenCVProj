@@ -15,9 +15,9 @@ set(SOURCE_FILES
         CUtils.hpp
         OpenCV/BaseView/CBaseView.cpp
         OpenCV/BaseView/CBaseView.h
-        OpenCV/CutImage/views/CCutImgView.cpp
-        OpenCV/CutImage/views/CCutImgView.h
-        OpenCV/CutImage/opencv/cutImage.hpp OpenCV/BaseOpenCv/CBaseOpenCV.cpp OpenCV/BaseOpenCv/CBaseOpenCV.h)
+        OpenCV/CPhotoShop/views/CPhotoShopView.cpp
+        OpenCV/CPhotoShop/views/CPhotoShopView.h
+        OpenCV/CPhotoShop/opencv/CCutImage.hpp OpenCV/BaseOpenCv/CBaseOpenCV.cpp OpenCV/BaseOpenCv/CBaseOpenCV.h res/text/textDef.h OpenCV/CPhotoShop/opencv/CRotateImg.hpp)
 
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)

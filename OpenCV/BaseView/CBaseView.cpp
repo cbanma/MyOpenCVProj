@@ -35,3 +35,9 @@ void CBaseView::initData() {
     mBaseOpenCV = NULL;
 }
 
+void CBaseView::releaseCv() {
+    if(mBaseOpenCV != NULL){
+        delete (mBaseOpenCV);
+    }
+}
+

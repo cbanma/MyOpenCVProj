@@ -27,10 +27,11 @@ MainWindow::~MainWindow()
 
 void MainWindow::onHelloWorldBtnClick() {
     mHelloWorldView = new CHelloWorldView();
-    this->showMinimized();
+    //this->showMinimized();
 }
 
 void MainWindow::onCutImgBtnClick() {
-    mCutImgView = new CCutImgView();
     this->showMinimized();
+    mCutImgView = new CPhotoShopView();
+    mCutImgView->mDialog->setStyleSheet("background-color: green");
 }

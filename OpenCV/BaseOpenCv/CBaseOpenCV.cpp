@@ -6,7 +6,7 @@
 
 
 string CBaseOpenCV::getResPath() {
-    return "../res/";
+    return "../res/image/";
 }
 
 void CBaseOpenCV::showImage(string name,Mat & srcImage){

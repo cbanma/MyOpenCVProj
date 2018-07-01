@@ -56,4 +56,6 @@ void CHelloWorldView::onBtnClick()
             cout << "Default..." << endl;
             break;
     }
+
+    releaseCv();
 }

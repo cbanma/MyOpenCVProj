@@ -5,11 +5,18 @@
 #ifndef MYOPENCVPROJS_CBASEOPENCV_H
 #define MYOPENCVPROJS_CBASEOPENCV_H
 
+
+
 #include <iostream>
 #include <opencv2/opencv.hpp>
 
 using namespace std;
 using namespace cv;
+
+static string window_name;
+static Mat src;
+
+
 
 class CBaseOpenCV {
 public:

@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include "OpenCV/HelloWorld/views/CHelloWorldView.h"
-#include "OpenCV/CutImage/views/CCutImgView.h"
+#include "OpenCV/CPhotoShop/views/CPhotoShopView.h"
 
 namespace Ui {
 class MainWindow;
@@ -20,7 +20,7 @@ public:
 private:
     Ui::MainWindow *ui;
     CHelloWorldView *mHelloWorldView;
-    CCutImgView *mCutImgView;
+    CPhotoShopView *mCutImgView;
 
 public slots:
     void onHelloWorldBtnClick();
