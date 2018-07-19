@@ -29,6 +29,7 @@ public:
     QWidget *centralWidget;
     QPushButton *helloWorldBtn;
     QPushButton *cutImgButton;
+    QPushButton *testButton;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -42,10 +43,13 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         helloWorldBtn = new QPushButton(centralWidget);
         helloWorldBtn->setObjectName(QStringLiteral("helloWorldBtn"));
-        helloWorldBtn->setGeometry(QRect(30, 30, 113, 32));
+        helloWorldBtn->setGeometry(QRect(190, 10, 113, 32));
         cutImgButton = new QPushButton(centralWidget);
         cutImgButton->setObjectName(QStringLiteral("cutImgButton"));
-        cutImgButton->setGeometry(QRect(160, 30, 151, 32));
+        cutImgButton->setGeometry(QRect(320, 10, 151, 32));
+        testButton = new QPushButton(centralWidget);
+        testButton->setObjectName(QStringLiteral("testButton"));
+        testButton->setGeometry(QRect(40, 10, 141, 31));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -68,6 +72,7 @@ public:
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
         helloWorldBtn->setText(QApplication::translate("MainWindow", "\346\230\276\347\244\272\345\233\276\347\211\207", nullptr));
         cutImgButton->setText(QApplication::translate("MainWindow", "photoShop\347\256\227\346\263\225\346\250\241\346\213\237", nullptr));
+        testButton->setText(QApplication::translate("MainWindow", "OpenCV\345\237\272\346\234\254\345\212\237\350\203\275", nullptr));
     } // retranslateUi
 
 };

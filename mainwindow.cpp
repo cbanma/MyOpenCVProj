@@ -8,10 +8,12 @@ MainWindow::MainWindow(QWidget *parent) :
     initData();
     connect(ui->helloWorldBtn, SIGNAL(clicked()), this, SLOT(onHelloWorldBtnClick()));
     connect(ui->cutImgButton, SIGNAL(clicked()), this, SLOT(onCutImgBtnClick()));
+    connect(ui->testButton, SIGNAL(clicked()), this, SLOT(onTestBtnClick()));
 }
 void MainWindow::initData(){
     mHelloWorldView = NULL;
     mCutImgView = NULL;
+    mTestView = NULL;
 }
 
 MainWindow::~MainWindow()
@@ -23,15 +25,24 @@ MainWindow::~MainWindow()
     if(mCutImgView != NULL){
         delete(mCutImgView);
     }
+    if(mTestView != NULL){
+        delete(mTestView);
+    }
 }
 
 void MainWindow::onHelloWorldBtnClick() {
     mHelloWorldView = new CHelloWorldView();
-    //this->showMinimized();
+    this->showMinimized();
 }
 
 void MainWindow::onCutImgBtnClick() {
     this->showMinimized();
     mCutImgView = new CPhotoShopView();
     mCutImgView->mDialog->setStyleSheet("background-color: green");
+}
+
+void MainWindow::onTestBtnClick() {
+    this->showMinimized();
+    mTestView = new CImageFuncView();
+    mTestView->mDialog->setStyleSheet("background-color: gray");
 }

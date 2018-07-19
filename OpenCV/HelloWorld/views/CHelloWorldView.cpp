@@ -25,6 +25,7 @@ void CHelloWorldView::initView() {
 
     createButton("showSobelMage",0,50);
     createButton("showSobelMageFull",150,50);
+    createButton("灰色图形",350,50);
     createButton("退出程序",400,460);
 
 }
@@ -50,6 +51,8 @@ void CHelloWorldView::onBtnClick()
             break;
         case "showSobelMageFull"_hash:
             mBaseOpenCV->showSobelMageFull();
+        case "灰色图形"_hash:
+            mBaseOpenCV->showGrayImage();
         case "退出程序"_hash:
             exit(0);
         default:

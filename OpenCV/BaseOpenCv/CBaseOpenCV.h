@@ -22,12 +22,15 @@ class CBaseOpenCV {
 public:
     string getResPath();
     void showImage(string name,Mat & srcImage);
-    Mat initImage(bool bIsShow);
+    virtual Mat initImage(bool bIsShow);
     Mat roiImage(Mat & srcImage,bool bIsShow);
     void rangeImage(Mat & srcImage,bool bIsShow);
     void sobelImage(Mat & srcImage, bool bIsShow);
+    Mat getImageWithName(string imageName);
+    Mat mergeImg(Mat &src1,Mat &src2);
 
     virtual  void showImage();
+    virtual  void showGrayImage();
     virtual  void showRoiMage();
     virtual  void showRangeMage();
     virtual  void showSobelMage();

@@ -56,6 +56,14 @@ void CBaseOpenCV::showImage(){
     waitKey(0);
 }
 
+void CBaseOpenCV::showGrayImage(){
+    Mat img = initImage(false);
+    Mat gray_image ;
+    cvtColor(img, gray_image, CV_BGR2GRAY);  //要引用头文件opencv/opencv.hpp
+    showImage("init image", gray_image);
+    waitKey(0);
+}
+
 void CBaseOpenCV::showRoiMage(){
     Mat  srcImage = initImage(false);
     Mat roiMat = roiImage(srcImage,true);
@@ -82,3 +90,18 @@ void CBaseOpenCV::showSobelMageFull(){
     showImage ("roiImage",srcImage);
 }
 
+Mat CBaseOpenCV::getImageWithName(string imageName) {
+    Mat  srcImage = imread(getResPath() + imageName);
+    return srcImage;
+}
+
+Mat CBaseOpenCV::mergeImg(Mat &src1, Mat &src2) {
+    int rows = src1.rows+5+src2.rows;
+    int cols = src1.cols+5+src2.cols;
+    CV_Assert(src1.type () == src2.type ());
+    Mat dst;
+    dst.create (rows,cols,src1.type ());
+    src1.copyTo (dst(Rect(0,0,src1.cols,src1.rows)));
+    src2.copyTo (dst(Rect(src1.cols+5,0,src2.cols,src2.rows)));
+    return dst;
+}

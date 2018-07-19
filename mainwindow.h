@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "OpenCV/HelloWorld/views/CHelloWorldView.h"
 #include "OpenCV/CPhotoShop/views/CPhotoShopView.h"
+#include "OpenCV/CVImageFunc/views/CImageFuncView.h"
 
 namespace Ui {
 class MainWindow;
@@ -21,10 +22,12 @@ private:
     Ui::MainWindow *ui;
     CHelloWorldView *mHelloWorldView;
     CPhotoShopView *mCutImgView;
+    CImageFuncView *mTestView;
 
 public slots:
     void onHelloWorldBtnClick();
     void onCutImgBtnClick();
+    void onTestBtnClick();
     void initData();
 };
 
